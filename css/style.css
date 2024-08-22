@@ -458,6 +458,7 @@ input[type="range"] {
 .guide {
     transition: background-color 0.15s ease-in-out, font-weight 0.15s ease-in-out;
     border-radius: 10px;
+    padding-block-end: 8px;
 
     &:has(.btn[aria-expanded="true"]) {
         background-color: var(--gray-300);
@@ -653,6 +654,10 @@ button:is(.setup-summary) {
     .alert-wrapper {
         top: 70px;
         left: 45%;
+    }
+
+    .guide {
+        padding-block-end: 0;
     }
 }
 
