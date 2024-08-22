@@ -28,12 +28,13 @@ function completeSetup(event) {
         currentValue += 1;
 
         let customizeAlert = event.target.closest(".guide-details").firstElementChild;
-        // let setupParent = event.target.closest(".guide").firstElementChild;
-        // setupParent.focus();
+        let setup = event.target.dataset.setup;
+        let setupParent = event.target.closest(".guide").firstElementChild;
+        
         setTimeout(()=> {
             updateProgress();
-            let setup = event.target.dataset.setup;
-
+            setupParent.focus();
+            
             switch (Number(setup)) {
                 case 1:
                     customizeAlert.innerText = "Theme customization completed";
@@ -53,6 +54,8 @@ function completeSetup(event) {
             }
             if (currentValue === 5) {
                 appendAlert('Nice, you completed your store setup!', 'success');
+                let closeSetupAlert = document.querySelector(".icon1");
+                closeSetupAlert.focus();
             }
         }, 2500);
     }
@@ -86,7 +89,7 @@ const appendAlert = (message, type) => {
   wrapper.innerHTML = [
     `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
     `   <p class="fs-300 fw-600">Alert</p>`,
-    '   <button tabindex="1" type="button" class="btn-close icon1" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '   <button tabindex="0" type="button" class="btn-close icon1" data-bs-dismiss="alert" aria-label="Close"></button>',
     '   <button tabindex="-1" type="button" class="icon2 btn-close" aria-hidden="true"></button>',
     `   <div class="gray-bg flex message">${message}</div>`,
     '</div>'
