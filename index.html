@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Setup Guide</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Boostrap -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="black-bg">
+      <div class="flex justify-content-between container">
+        <div>
+          <a href="index.html" aria-label="Shopify store hompage"><img class="hide-dt" src="imgs/shopify-icon.svg" alt="Shopify" width="30" height="30"></a>
+          <a href="index.html"><img class="hide-mb" src="imgs/shopify-logo.svg" alt="" width="104" height="30"></a>
+      </div>
+      <div>
+        <form action="" role="search" class="search-input flex gap-1">
+          <label id="top-nav-label" for="top-nav-search" class="visually-hidden">Search Shopify</label>
+          <img src="imgs/search-icon.svg" alt="">
+          <input type="search" id="top-nav-search" name="search" placeholder="Search" aria-labelledby="top-nav-label">
+        </form>
+      </div>
+      <div class="flex gap-1">
+        <button class="btn black-btn flex justify-content-center" aria-label="Notification" type="button"><img src="imgs/bell-icon.svg" width="20" height="20" alt=""></button>
+          <div class="dropdown">
+              <button class="btn black-btn user-btn gray-text gap-1 fw-500 flex justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="hide-mb">Davii Collection</span> <div class="green-box" aria-hidden="true">DC</div>
+              </button>
+              <nav class="dropdown-menu fs-200 fw-400 dark-text">
+                  <ul>
+                    <li>
+                      <a class="dropdown-item flex space-between gray-bg" href="#">
+                        <div class="flex gap-1">
+                          <div class="green-box fs-50 fw-500" aria-hidden="true">DC</div> <span class="fw-600">Davii Collection</span>
+                        </div>
+                        <img src="imgs/check-icon.svg" alt="">
+                      </a>
+                    </li>
+                      <li class="my-1"><a class="dropdown-item flex" href="#">
+                        <div class="flex gap-1 justify-content-start">
+                            <img src="imgs/store-icon.svg" alt=""> <span>All Stores</span>
+                        </div>
+                      </a></li>
+                    </ul>
+                    <ul class="dropdown-border">
+                      <li class="my-1"><a class="dropdown-item flex" href="#">
+                        Help Center
+                      </a></li>
+                      <li class="my-1"><a class="dropdown-item flex" href="#"> Changelog </a></li>
+                      <li class="my-1"><a class="dropdown-item flex" href="#">Community Forums </a></li>
+                      <li class="my-1"><a class="dropdown-item flex" href="#">Hire a Shopify Partner </a></li>
+                      <li class="my-1"><a class="dropdown-item flex" href="#">Keyboard Shortcuts </a></li>
+                    </ul>
+                    <ul>
+                      <li class="my-1"><a class="dropdown-item flex flex-column align-items-start" href="#">
+                        <span class="fw-600">David Micheal</span>
+                        <span>davidmicheal@gmail.com</span>
+                      </a></li>
+                      <li class="my-1"><a class="dropdown-item flex" href="#"> Manage Account </a></li>
+                      <li class="my-1"><a class="dropdown-item flex" href="#">Log Out </a></li>
+                    </ul>
+                  </nav>
+            </div>
+      </div>
+      </div>
+    </header>
+    
+    <main class="gray-bg py-4">
+      <div class="container" id="liveAlertPlaceholder">
+        <div class="black-bg alert nofication fs-200 fade show alert-dismissible"  role="alert">
+          <p class="alert-title" >Extend your trial for $1/month for 3 months on select plans.</p>
+          <button type="button" class="btn white-btn fw-600">Select a plan</button>
+          <img tabindex="0" role="button" class="alert-close" data-bs-dismiss="alert" src="imgs/close-icon.svg" aria-label="close alert" alt="" width="15" height="15">
+        </div>
+
+        <section class="">
+          <div class="setup white-bg">
+            <button class="btn setup-summary  mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <h1 class="fs-300 fw-500 mb-1">Setup guide</h1>
+              <h2 class="mb-3 fs-200 fw-400">Use this personalized guide to get your store up and running.</h2>
+
+              <div class="flex gap-1">
+                <p aria-live="polite"><span id="rangeValue">1</span> / <span>5</span> completed</p> <input aria-hidden="true" tabindex="-1" type="range" name="Setup rogress" id="progress" value="0" max="5">
+              </div>
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="guide">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild1" aria-expanded="false" aria-controls="collapseChild1">
+                  <div class="svg-container">
+                    <svg class="first-svg fade-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                    </svg>
+                    <svg class="second-svg spin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg class="third-svg fade-in" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8162 8.64149C17.0603 8.88557 17.0603 9.2813 16.8162 9.52538L11.3995 14.942C11.1555 15.1861 10.7597 15.1861 10.5157 14.942L7.80733 12.2337C7.56325 11.9896 7.56325 11.5939 7.80733 11.3498C8.0514 11.1057 8.44713 11.1057 8.69121 11.3498L10.9576 13.6162L15.9323 8.64149C16.1764 8.39742 16.5721 8.39742 16.8162 8.64149Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  <p>Customize your online store</p>
+                </button>
+                <div class="collapse " id="collapseChild1">
+                  <div class="flex space-between">
+                    <div class="guide-details">
+                      <p role="alert" class="visually-hidden">Theme not customized</p>
+                      <p class="mb-1">Choose a theme and add your logo, colors, and images to reflect your brand. <a href="#" class="fw-600 mb-3">Learn more</a></p>
+                      
+                      <button class="btn dark-btn" data-name="setup" data-setup="1">Customize theme</button>
+                    </div>
+                    <img class="hide-mb" src="imgs/Customize.svg" alt="" width="157" height="120">
+                  </div>
+                </div>
+              </div>
+              <div class="guide">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild2" aria-expanded="false" aria-controls="collapseChild2">
+                  <div class="svg-container">
+                    <svg class="first-svg fade-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                    </svg>
+                    <svg class="second-svg spin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg class="third-svg fade-in" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8162 8.64149C17.0603 8.88557 17.0603 9.2813 16.8162 9.52538L11.3995 14.942C11.1555 15.1861 10.7597 15.1861 10.5157 14.942L7.80733 12.2337C7.56325 11.9896 7.56325 11.5939 7.80733 11.3498C8.0514 11.1057 8.44713 11.1057 8.69121 11.3498L10.9576 13.6162L15.9323 8.64149C16.1764 8.39742 16.5721 8.39742 16.8162 8.64149Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  <p>Add your first product</p>
+                </button>
+                <div class="collapse " id="collapseChild2">
+                  <div class="flex space-between">
+                    <div class="guide-details">
+                      <p role="alert" class="visually-hidden">First product not added</p>
+                      <p class="mb-3">Write a description, add photos, and set pricing for the products you plan to sell. <a href="#" class="fw-600">Learn more</a></p>
+                      
+                      <button class="btn dark-btn" data-name="setup" data-name="setup" data-setup="2">Add product</button>
+                    </div>
+                    <img src="imgs/product-img.svg" alt="" width="157" height="120">
+                  </div>
+                </div>
+              </div>
+              <div class="guide">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild3" aria-expanded="false" aria-controls="collapseChild3">
+                  <div class="svg-container">
+                    <svg class="first-svg fade-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                    </svg>
+                    <svg class="second-svg spin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg class="third-svg fade-in" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8162 8.64149C17.0603 8.88557 17.0603 9.2813 16.8162 9.52538L11.3995 14.942C11.1555 15.1861 10.7597 15.1861 10.5157 14.942L7.80733 12.2337C7.56325 11.9896 7.56325 11.5939 7.80733 11.3498C8.0514 11.1057 8.44713 11.1057 8.69121 11.3498L10.9576 13.6162L15.9323 8.64149C16.1764 8.39742 16.5721 8.39742 16.8162 8.64149Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  <p>Add a custom domain</p>
+                </button>
+                <div class="collapse " id="collapseChild3">
+                  <div class="flex space-between">
+                    <div class="guide-details">
+                      <p role="alert" class="visually-hidden">Custom domain not added</p>
+                      <p class="mb-3">Your current domain is 222219.myshopify.com but you can add a custom to help customers find your online store. <a href="#">Learn more</a></p>
+                      
+                      <button class="btn dark-btn" data-name="setup" data-name="setup" data-setup="3">Add domain</button>
+                    </div>
+                    <img src="imgs/custom-domain.svg" alt="" width="157" height="120">
+                  </div>
+                </div>
+              </div>
+              <div class="guide">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild4" aria-expanded="false" aria-controls="collapseChild4">
+                  <div class="svg-container">
+                    <svg class="first-svg fade-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                    </svg>
+                    <svg class="second-svg spin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg class="third-svg fade-in" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8162 8.64149C17.0603 8.88557 17.0603 9.2813 16.8162 9.52538L11.3995 14.942C11.1555 15.1861 10.7597 15.1861 10.5157 14.942L7.80733 12.2337C7.56325 11.9896 7.56325 11.5939 7.80733 11.3498C8.0514 11.1057 8.44713 11.1057 8.69121 11.3498L10.9576 13.6162L15.9323 8.64149C16.1764 8.39742 16.5721 8.39742 16.8162 8.64149Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  <p>Name your store</p>
+                </button>
+                <div class="collapse " id="collapseChild4">
+                  <div class="flex space-between">
+                    <div class="guide-details">
+                      <p role="alert" class="visually-hidden">Store not named</p>
+                      <p class="mb-3">Your temporary store name is currently Davii collections. The store name appears in your admin and your online store. <a href="#">Learn more</a></p>
+                      
+                      <button class="btn dark-btn" data-name="setup" data-name="setup" data-setup="4">Name store</button>
+                    </div>
+                    <img src="imgs/store-img.svg" alt="" width="157" height="120">
+                  </div>
+                </div>
+              </div>
+              <div class="guide">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild5" aria-expanded="false" aria-controls="collapseChild5">
+                  <div class="svg-container">
+                    <svg class="first-svg fade-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                    </svg>
+                    <svg class="second-svg spin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg class="third-svg fade-in" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8162 8.64149C17.0603 8.88557 17.0603 9.2813 16.8162 9.52538L11.3995 14.942C11.1555 15.1861 10.7597 15.1861 10.5157 14.942L7.80733 12.2337C7.56325 11.9896 7.56325 11.5939 7.80733 11.3498C8.0514 11.1057 8.44713 11.1057 8.69121 11.3498L10.9576 13.6162L15.9323 8.64149C16.1764 8.39742 16.5721 8.39742 16.8162 8.64149Z" fill="white"/>
+                      </svg>                      
+                  </div>
+                  <p>Set up a payment provider</p>
+                </button>
+                <div class="collapse " id="collapseChild5">
+                  <div class="flex space-between">
+                    <div class="guide-details">
+                      <p role="alert" class="visually-hidden">Payment provider not set</p>
+                      <p class="mb-3">Choose a payment to start accepting payments. You'll need to create an account with the payment provider and set it up with your Shopify store. <a href="#">Learn more</a></p>
+                      
+                      <button class="btn dark-btn" data-name="setup" data-name="setup" data-setup="5">Set up payment</button>
+                    </div>
+                    <img src="imgs/payment-provider.svg" alt="" width="157" height="120">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
