@@ -1,11 +1,11 @@
 #Accessible Shopify Setup Page
 
-Shopify setup is fictional shopify setup page that is assessible. It was built to be more user friendly to users including users that rely on the keyboard for navigation and screen readers.
+Shopify setup is a fictional Shopify setup page. It was built to be user-friendly to users including users that rely on the keyboard for navigation and screen readers.
 
 Website hosted here-> [title](https://shopify-divinej.netlify.app)
 
 ##Technologies
-Built with HTML, CSS, Boostrap and Javascript to test my knowledge of web accessibility and building a responsive web page from a design. 
+Built with HTML, CSS, Bootstrap and Javascript to test my knowledge of web accessibility and building a responsive web page from a design. 
 Figma link [title](https://www.figma.com/design/wTZFEVttf4DvsrJqh4FbFx/Level-Up-Front-Hackathon-(Copy)?node-id=19-16733&t=B1Z4ZmhUwxeZS96B-0)
 Javascript was mainly used to update the progress bar and add animation.
 
