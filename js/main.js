@@ -97,4 +97,3 @@ const appendAlert = (message, type) => {
   wrapper.classList.add('alert-wrapper');
   alertPlaceholder.append(wrapper);
 }
- 

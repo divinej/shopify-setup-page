@@ -361,19 +361,30 @@ main {
     margin-bottom: 0;
 }
 .alert-close {
+    --bs-btn-close-opacity: 1;
+
     grid-area: Close;
     cursor: pointer;
     justify-self: center;
+    position: unset !important;
+    padding: 0.5rem !important;
+    background: transparent url('../imgs/close-icon.svg') center / 1.5em auto no-repeat;
+    z-index: auto !important;
 
-    &:where(:focus-visible) {
-        outline: 2px solid var(--brand-blue);
+    &:is(:focus-visible, :focus) {
+        outline: 2px solid var(--brand-blue) !important;
         outline-offset: 2px;
         border-radius: 2px;
+    }
+    &:is(:hover) {
+        border: 1px solid var(--black-200);
+        opacity: 1;
     }
 }
 .white-btn {
     grid-area: Button;
 }
+
 
 /* Setup guide */
 .setup  {
